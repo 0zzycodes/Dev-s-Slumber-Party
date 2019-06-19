@@ -302,10 +302,10 @@ input[type='submit']:hover {
   justify-content: space-evenly;
 }
 .link {
+  z-index: 2;
   text-align: center;
 }
 .link p {
-  font-size: 4vw;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
