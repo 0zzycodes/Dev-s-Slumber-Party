@@ -24,7 +24,7 @@ img {
   max-width: 210px;
 }
 nav {
-  height: 10vh;
+  height: 75px;
   padding: 10px 40px;
   background: var(--SecondaryColor);
   color: var(--PrimaryColor);
