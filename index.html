@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code And Chill</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="img/logo.svg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
@@ -29,8 +30,15 @@
         }
         #mc_embed_signup input {
           font-size: 1.5em;
-          width: 15vw;
+          width: 10vw;
           height: 5vh;
+        }
+        @media only screen and (max-width: 760px) {
+          #mc_embed_signup input {
+            font-size: 1.5em;
+            width: 20vw;
+            height: 6vh;
+          }
         }
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -80,7 +88,7 @@
           <span class="bounce">Two days</span> of intense team learning! Friday
           night or evening(depending on time zone) will consist of learning pure
           fundamentals of a new language or tech with a group lead who knows the
-          tech and then other people trying to learn .
+          tech and then other people trying to learn.
         </p>
         <img src="img/group.svg" alt="GROUP" />
       </section>
@@ -93,15 +101,15 @@
       </section>
       <section id="objectives" class="flex">
         <p>
-          <span class="bounce">Objectives</span> grow together as programmers
-          and keep the learning process going
+          <span class="bounce">Objective</span> is to grow together as
+          programmers and keep the learning process going.
         </p>
         <img src="img/target.svg" alt="TARGET" />
       </section>
       <section id="join" class="flex">
         <img src="img/join.svg" alt="JOIN" />
         <div class="link">
-          <p><span class="bounce">Join</span> the slumber party!</p>
+          <p><span class="bounce">Join</span> us to have the chillest time!</p>
           <!-- Begin Mailchimp Signup Form -->
           <link
             href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
