@@ -68,13 +68,13 @@ input[type='submit']:hover {
 #saturday,
 #objectives,
 #join {
-  height: 35vh;
+  height: 245px;
   position: relative;
   padding: 10px 30px 40px 10px;
 }
 #showcase,
 #join {
-  height: 40vh;
+  height: 300px;
 }
 #twoDays::before,
 #saturday::before,
