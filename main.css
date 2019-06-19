@@ -16,29 +16,6 @@ html,
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.bounce span {
-  display: inline-block;
-}
-
-.grow {
-animation: crazy 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-@keyframes crazy{
-0%{
-  transform: rotate(360deg) scale(1.2);
-  color: var(--PrimaryColor);
-}
-50%{  transform: rotate(0deg) scale(1.4);
-  color: var(--SecondaryColor);}
-100%{
-  transform: rotate(0) scale(1);
-  color: var(--PrimaryColor);
-}
-
-}
-
-
   span {
     font-weight: 800;
     color: var(--PrimaryColor);
@@ -145,7 +122,29 @@ animation: crazy 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     margin-bottom: 20px;
     text-transform: uppercase;
   }
+  /* this is just for the hover effect */
+  .bounce span {
+    display: inline-block;
+  }
   
+  .grow {
+  animation: crazy 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  @keyframes crazy{
+  0%{
+    transform: rotate(360deg) scale(1.2);
+    color: var(--PrimaryColor);
+  }
+  50%{  transform: rotate(0deg) scale(1.4);
+    color: var(--SecondaryColor);}
+  100%{
+    transform: rotate(0) scale(1);
+    color: var(--PrimaryColor);
+  }
+  
+  }
+  /* mobile responsive  */
 @media only screen and (max-width: 760px) {
   nav h1 {
     text-transform: uppercase;
