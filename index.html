@@ -5,17 +5,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code And Chill</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="icon" href="img/logo.svg">
+    <link rel="icon" href="img/logo.svg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
     <nav class="flex">
       <img src="img/logo.svg" alt="LOGO" />
-      <h1 class='bounce'>Code And Chill</h1>
+      <h1 class="bounce">Code And Chill</h1>
       <!-- Begin Mailchimp Signup Form -->
       <link
         href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
@@ -34,10 +35,10 @@
         }
         @media only screen and (max-width: 760px) {
           #mc_embed_signup input {
-          font-size: 1.5em;
-          width: 20vw;
-          height: 6vh;
-        }
+            font-size: 1.5em;
+            width: 20vw;
+            height: 6vh;
+          }
         }
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -76,13 +77,16 @@
     </nav>
     <main class="container">
       <section id="showcase" class="flex">
-        <p><span class="bounce">WELCOME</span> to the chilliest remote Hackathon ever!</p>
+        <p>
+          <span class="bounce">WELCOME</span> to the chilliest remote Hackathon
+          ever!
+        </p>
         <img src="img/showcase.svg" alt="SHOWCASE" />
       </section>
       <section id="twoDays" class="flex">
         <p>
-          <span class="bounce">Two days</span> of intense team learning! Friday night or
-          evening(depending on time zone) will consist of learning pure
+          <span class="bounce">Two days</span> of intense team learning! Friday
+          night or evening(depending on time zone) will consist of learning pure
           fundamentals of a new language or tech with a group lead who knows the
           tech and then other people trying to learn.
         </p>
@@ -91,14 +95,14 @@
       <section id="saturday" class="flex">
         <img src="img/saturday.svg" alt="SATURDAY" />
         <p>
-          <span class="bounce">Saturday</span> will consist of working in teams to build out
-          different components of an app.
+          <span class="bounce">Saturday</span> will consist of working in teams
+          to build out different components of an app.
         </p>
       </section>
       <section id="objectives" class="flex">
         <p>
-          <span class="bounce">Objective</span> is to grow together as programmers and keep the
-          learning process going.
+          <span class="bounce">Objective</span> is to grow together as
+          programmers and keep the learning process going.
         </p>
         <img src="img/target.svg" alt="TARGET" />
       </section>
@@ -156,29 +160,29 @@
       </section>
     </main>
   </body>
-  
-  <script>
-  function bounceInit(e) {
-  const target = e.target;
-  $(target).addClass('grow')
-}
-function bounceEnd(e) {
-  const target = e.target
-  $(target).removeClass('grow')
-}
 
-$('.bounce').html(function (i, html) {
-  var chars = $.trim(html).split("");
-  const alph = chars.map(x => {
-    if(x != ' ') {
-      return '<span>' + x + '</span'
-    } else {
-      return ' '
-    }  
-    })
-  return alph
-});
-$('.bounce span').on('mouseover', bounceInit)
-$('.bounce span').on('animationend', bounceEnd)
+  <script>
+    function bounceInit(e) {
+      const target = e.target;
+      $(target).addClass('grow');
+    }
+    function bounceEnd(e) {
+      const target = e.target;
+      $(target).removeClass('grow');
+    }
+
+    $('.bounce').html(function(i, html) {
+      var chars = $.trim(html).split('');
+      const alph = chars.map(x => {
+        if (x != ' ') {
+          return '<span>' + x + '</span';
+        } else {
+          return ' ';
+        }
+      });
+      return alph;
+    });
+    $('.bounce span').on('mouseover', bounceInit);
+    $('.bounce span').on('animationend', bounceEnd);
   </script>
 </html>
