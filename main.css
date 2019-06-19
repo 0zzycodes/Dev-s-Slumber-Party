@@ -119,6 +119,7 @@ body {
     text-align: center;
   }
   .link p {
+    font-size: 3vw;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -259,7 +260,6 @@ input[type='submit']:hover {
 #join {
   height: 245px;
   position: relative;
-  padding: 10px 30px 40px 10px;
 }
 #showcase,
 #join {
@@ -305,6 +305,7 @@ input[type='submit']:hover {
   text-align: center;
 }
 .link p {
+  font-size: 4vw;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
