@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dev' Slumber Party</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
     <nav class="flex">
       <img src="img/logo.svg" alt="LOGO" />
-      <h1>Dev's Slumber Party</h1>
+      <h1 class='bounce'>Dev's Slumber Party</h1>
       <!-- Begin Mailchimp Signup Form -->
       <link
         href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
@@ -58,12 +59,12 @@
     </nav>
     <main class="container">
       <section id="showcase" class="flex">
-        <p><span>WELCOME</span> to the chilliest remote Hackathon ever!</p>
+        <p><span class="bounce">WELCOME</span> to the chilliest remote Hackathon ever!</p>
         <img src="img/showcase.svg" alt="SHOWCASE" />
       </section>
       <section id="twoDays" class="flex">
         <p>
-          <span>Two days</span> of intense team learning! Friday night or
+          <span class="bounce">Two days</span> of intense team learning! Friday night or
           evening(depending on time zone) will consist of learning pure
           fundamentals of a new language or tech with a group lead who knows the
           tech and then other people trying to learn .
@@ -73,13 +74,13 @@
       <section id="saturday" class="flex">
         <img src="img/saturday.svg" alt="SATURDAY" />
         <p>
-          <span>Saturday</span> will consist of working in teams to build out
+          <span class="bounce">Saturday</span> will consist of working in teams to build out
           different components of an app.
         </p>
       </section>
       <section id="objectives" class="flex">
         <p>
-          <span>Objectives</span> grow together as programmers and keep the
+          <span class="bounce">Objectives</span> grow together as programmers and keep the
           learning process going
         </p>
         <img src="img/target.svg" alt="TARGET" />
@@ -87,7 +88,7 @@
       <section id="join" class="flex">
         <img src="img/join.svg" alt="JOIN" />
         <div class="link">
-          <p><span>Join</span> the slumber party!</p>
+          <p><span class="bounce">Join</span> the slumber party!</p>
           <!-- Begin Mailchimp Signup Form -->
           <link
             href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
@@ -138,4 +139,29 @@
       </section>
     </main>
   </body>
+  
+  <script>
+  function bounceInit(e) {
+  const target = e.target;
+  $(target).addClass('grow')
+}
+function bounceEnd(e) {
+  const target = e.target
+  $(target).removeClass('grow')
+}
+
+$('.bounce').html(function (i, html) {
+  var chars = $.trim(html).split("");
+  const alph = chars.map(x => {
+    if(x != ' ') {
+      return '<span>' + x + '</span'
+    } else {
+      return ' '
+    }  
+    })
+  return alph
+});
+$('.bounce span').on('mouseover', bounceInit)
+$('.bounce span').on('animationend', bounceEnd)
+  </script>
 </html>
