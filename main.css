@@ -204,3 +204,107 @@ body {
     display: none;
   }
 }
+span {
+  color: var(--PrimaryColor);
+  text-transform: uppercase;
+}
+img {
+  height: 100%;
+  max-width: 210px;
+}
+nav {
+  height: 75px;
+  padding: 10px 40px;
+  background: var(--SecondaryColor);
+  color: var(--PrimaryColor);
+}
+nav h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+input[type='submit'] {
+  border: none;
+  border: 1.5px solid var(--PrimaryColor);
+  background-color: var(--PrimaryColor);
+  border-radius: 30px;
+  padding: 5px 15px 3.5px 15px;
+  color: var(--SecondaryColor);
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+input[type='submit']:hover {
+  background-color: var(--SecondaryColor);
+  color: var(--PrimaryColor);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#showcase,
+#twoDays,
+#saturday,
+#objectives,
+#join {
+  height: 245px;
+  position: relative;
+  padding: 10px 30px 40px 10px;
+}
+#showcase,
+#join {
+  height: 300px;
+}
+#twoDays::before,
+#saturday::before,
+#objectives::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 2px;
+  background: var(--PrimaryColor);
+  top: 15px;
+}
+#saturday::before {
+  right: 0;
+}
+#showcase p {
+  font-size: 35px;
+  text-transform: capitalize;
+  min-width: 250px;
+  max-width: 450px;
+}
+#twoDays {
+  padding: 40px 30px 20px 10px;
+}
+#twoDays::after {
+  right: 0;
+}
+#twoDays p,
+#saturday p,
+#objectives p {
+  min-width: 250px;
+  max-width: 400px;
+  color: #444444;
+  font-size: 20px;
+}
+#join {
+  justify-content: space-evenly;
+}
+.link {
+  text-align: center;
+}
+.link p {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
