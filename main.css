@@ -26,7 +26,7 @@ img {
   max-width: 210px;
 }
 nav {
-  height: 10vh;
+  height: 75px;
   padding: 10px 40px;
   background: var(--SecondaryColor);
   color: var(--PrimaryColor);
@@ -41,7 +41,7 @@ input[type='submit'] {
   border: 1.5px solid var(--PrimaryColor);
   background-color: var(--PrimaryColor);
   border-radius: 30px;
-  padding: 5px 15px 3.5px 15px;
+  /* padding: 5px 15px 3.5px 15px; */
   color: var(--SecondaryColor);
   letter-spacing: 2px;
   cursor: pointer;
@@ -71,13 +71,13 @@ input[type='submit']:hover {
 #objectives,
 #join {
   cursor: default;
-  height: 35vh;
+  height: 250px;
   position: relative;
   padding: 10px 30px 40px 10px;
 }
 #showcase,
 #join {
-  height: 40vh;
+  height: 300px;
 }
 #twoDays::before,
 #saturday::before,
